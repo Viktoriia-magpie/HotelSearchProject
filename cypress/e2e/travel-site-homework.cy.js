@@ -43,7 +43,8 @@ describe('The sanity test suit for Hotels tab', () => {
 
     it('Verify Search button on the Hotels tab', () => {
         cy.get('[type="submit"]').should("be.visible")
-        cy.contains('search').should("have.text", "search")
+        cy.get('[type="submit"]').should("include.text", "search")
         })
 
 })
+
