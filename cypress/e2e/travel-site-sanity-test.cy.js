@@ -2,7 +2,7 @@
 describe('The sanity test suit for travel site', () => {
   it('navigate to the main page', () => {
     cy.visit('http://localhost:3000')
-    cy.url(). should('eq', 'http://localhost:3000/')
+    cy.url().should('eq', 'http://localhost:3000/')
   })
   
   it('verify tabs on the page', () => {
